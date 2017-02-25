@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html id="maphtml">
+	<head><!--the head is the non-printed part of the website which includes links to the styling an javascript pages-->
+		<title>Nile Hotel</title>
+		
+		<link type="text/css" rel="stylesheet"  media="screen and (min-width:1025px)" href="static/css/computer.css"> 
+		<!--link to css file for computer screen-->
+		<link type="text/css" rel="stylesheet"  media="screen and (min-width:701px) and (max-width:1024px)" href="static/css/tablet.css">
+		<!--link to css file for tablets-->
+		<link type="text/css" rel="stylesheet"  media="screen and (min-width:0px) and (max-width:700px)" href="static/css/mobile.css">
+		<!--link to css file for mobile devices-->
+		
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="static/homepage.js"></script><!--link to javascript file-->
+	</head>
+	
+	<body id="mapbody"><!--the body is the printed part of the website-->
+		<header><!--this is the header at the top of the page including a logo an the page's title-->
+			<img id="logo" src="static/images/logo.jpg" alt="">
+			<h1>Our location</h1>
+		</header>
+				
+		<nav id=mapnav><!--this is the navigation bar with hyperlinks to all pages-->
+			<p id="nav">
+			<a href="/">Homepage</a>
+			<a href="/details">Hotel Details</a>
+			<a href="/facilities">Facilities</a>
+			<a href="/rooms">Our Rooms</a>
+			<a href="/attractions">Local activities and attractions</a>
+			<a href="/gallery">Gallery</a>
+			<a href="/booking">Book a room</a>
+			<a href="/comments">Comments</a>
+			<a href="/contact">Contact Details</a>
+			</p>
+		</nav>	
+		
+		<div><!--this is the div where the main content appears-->
+			<p id="direc">Our hotel is located at 2 Kasr Al Nile, Ismailia, Qasr an Nile, Cairo Governorate, Egypt</p>
+		</div>	
+		<div id=map><!--this is the div where the live  map appears-->
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0HgDP2336pJD-7R5rRDilSGlClQuNqr4&amp;callback=initMap" async defer></script>
+			<!--calling the fuction for creating the map-->
+		</div>
+	</body>	
+</html>

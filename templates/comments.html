@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+	<head><!--the head is the non-printed part of the website which includes links to the styling an javascript pages-->
+		<title>Nile Hotel</title>
+		
+		<link type="text/css" rel="stylesheet"  media="screen and (min-width:1025px)" href="static/css/computer.css"> 
+		<!--link to css file for computer screen-->
+		<link type="text/css" rel="stylesheet"  media="screen and (min-width:701px) and (max-width:1024px)" href="static/css/tablet.css">
+		<!--link to css file for tablets-->
+		<link type="text/css" rel="stylesheet"  media="screen and (min-width:0px) and (max-width:700px)" href="static/css/mobile.css">
+		<!--link to css file for mobile devices-->
+			
+	</head>
+	
+	<body><!--the body is the printed part of the website-->
+		<header><!--this is the header at the top of the page including a logo an the page's title-->
+			<img id="logo" src="static/images/logo.jpg" alt="">
+			<h1>What people think for us</h1>
+		</header>	
+		
+		<nav>
+			<p id="nav"><!--this is the navigation bar with hyperlinks to all pages-->
+			<a href="/">Homepage</a>
+			<a href="/details">Hotel Details</a>
+			<a href="/facilities">Facilities</a>
+			<a href="/rooms">Our Rooms</a>
+			<a href="/attractions">Local activities and attractions</a>
+			<a href="/directions">Directions</a>
+			<a href="/gallery">Gallery</a>
+			<a href="/booking">Book a room</a>
+			<a href="/contact">Contact Details</a>
+			</p>
+		</nav>	
+		
+		<div id="main">
+			<p>Please tell us your opinion for our hotel<p>
+		</div>
+		
+		<div id=main1>
+		<form action="addComment" method="post">
+			<input id="namebox" type="text" name="name" maxlength="32" size="49" placeholder="Please enter your name here"><br/>
+			<textarea  id="txt1" name="comment" rows="20" cols="50" placeholder="Please enter your comment here"></textarea><br/>
+			<input id="btn" type="submit" name="add comment">
+		</form>
+		</div>
+		
+		<div id=main2>
+			{%for line in aList%}
+			<p id=ee >
+				{%for item in line%}
+					{{item}}<br/><br/>
+				{%endfor%}
+			</p><hr>
+			{%endfor%}
+		</div>
+		
+	</body>
+</html>

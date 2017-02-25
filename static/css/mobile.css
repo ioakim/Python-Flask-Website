@@ -1,0 +1,272 @@
+/* This is the css file for mobile devices */			
+		
+		body{/*properties of all the page bodies*/
+			margin-left:5%; 
+			margin-right:5%;
+			padding 5%; 
+			background-image: url("/static/images/background.jpg");
+		}
+		
+		h2{/*properties of all h2*/
+			font-family:Helvetica,Arial,sans-serif; 
+			font-size:medium; 
+			color:#000000; 
+			font-style: italic
+		}
+		
+		h1{/*properties of all h1*/
+			text-align:center;
+			font-family:Arial; 
+			font-size: medium; 
+			color: #000000;
+		}
+		
+		img#logo{/*properties of the logo image*/
+			width:100px
+		}
+
+		p{/*properties of all paragraphs*/
+			font-family:Helvetica,Arial;
+			text-align: justify;  
+		}
+		
+		p#hp, p#direc, p#nav{/*specific property for centering the nav paragraph, the directions page 
+								paragraph and the home page paragraph */
+			text-align:center;
+			margin-top:40px;
+		}
+	
+	
+		a{/*properties of all hyperlinks*/
+			margin: 5px; 
+			padding: 0px; 
+			border: 1px;
+			font-family:Helvetica,Arial	
+		}
+		
+		
+		header{/*properties of all header sections*/
+			border: 2px solid #0052F6;
+			position:static; 
+			background:#0052F6; 
+			width: 100%; 
+			height: 128px;
+		}
+
+		
+		
+		nav{/*properties of all nav sections*/
+			border: 1px solid #6699FF; 
+			background:#6699FF;
+			position: relative; 
+			width: 100%; 
+			top: 12%; 
+			bottom: 6%; 
+			margin-top: 0%;
+			text-align:center;
+		}
+		
+		nav a{/*properties of all nav hyperlinks*/
+			text-decoration: none;
+			display: block;
+		}
+		
+		div#main{  /*properties of all divs with id "main"*/
+			left: 10.04%; 
+			right: 0; 
+			
+			top: 12%; 
+			bottom: 6%; 
+			padding: 1.5 em;  
+			position: static;
+		}
+		
+		
+		#rest, #pub, #cafe, #gym, #pool, #kng, #rb1, #rb2, #rb3, #rb4, #rb5, #dbb, #suite{height:150px} /*properties of all images used in the attractions and facilities pages*/
+		#EG_M , #pyr, #mosque, #citadel, #park, #church, #horreya, #pub28, #jazzclub{height:150px} 
+		#opera, #tower, #khan, #fustat, #culturewheel, #confroom{height:150px}
+		#recep{width:300px;float:right} /*properties of the reception image*/
+				 
+		
+		.thumbnails{/*properties of the thumbnails div*/
+			margin-top: 40px;
+		}
+			
+		.thumbnails img  {/*properties of all thumbnails images*/
+			height: 80px;
+			width:100px;
+			border: 4px solid #555;
+			padding: 1px;
+			margin: 0 10px 10px 0;
+		}
+
+		
+		#main1{/*properties of the divs containing the comments and booking forms*/
+			width: 500px; 
+			margin: 0 auto;
+		}
+		
+		#main2{/*properties of the divs showing the divs and the confirmed bookings */
+			margin-top:60px;
+		}
+		
+		html#maphtml{/*specific properties of the map html*/
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		body#mapbody{/*specific properties of the map page body*/
+			height: 100%;
+			margin-left: 60px;
+			margin-right:60px;
+			padding: 0;
+		}
+		
+		nav#mapnav{/*specific properties of the map page nav*/
+			position:static;
+			border: 1px solid #6699FF;;
+		}
+		
+		div#map {/*specific properties of the map page div*/
+			left: 10.04%; 
+			right: 0; 
+			top: 12%; 
+			bottom: 6%; 
+			padding: 1.5 em;  
+			position: static;
+			margin:20px;
+			margin-top:40px;
+			height: 70%;
+			width: 70%;
+		}
+	  
+		div#b{/*specific properties of the facilities page div*/
+			margin-top:80px;
+		}
+		div#c{/*specific properties of the facilities page div*/
+			margin-top:120px;
+		}
+		div#d{/*specific properties of the facilities page div*/
+			margin-top:140px;
+		}
+		div#e{/*specific properties of the facilities page div*/
+			margin-top:160px;
+		}
+		div#f{/*specific properties of the facilities page div*/
+			margin-top:180px;
+		}
+	
+		div#imghp{/*specific properties of the div containing the homepage img*/
+				margin-top:45px;
+		}
+			
+		
+		img#hpimg, img#hotdet{/*specific properties of the homepage and hotel details image*/
+			display: block;
+    		margin-left: auto;
+   			margin-right: auto;
+			width:300px
+		}
+		
+		table, th, td {/*properties of the table in rooms page*/
+			border: 1px solid black;
+			text-align:center;
+			font-size:large;	
+		}
+
+		div#table{/*properties of the div containing the table in rooms page*/
+			margin-top: 100px;
+			left:50%;
+		}	
+					
+		#btn{/*properties of the submit button*/
+			color: #0052F6;
+			font-size: 15px;
+			padding: 10px 20px 10px 20px;
+			margin-left:150px; 
+		}
+		
+	
+		/*properties of the input boxes placeholders for all browsers*/
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			color:    #909;
+			text-align:center;
+			font-size:15px;
+		}
+		
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color:    #909;
+			opacity:  1;
+			text-align:center;
+		}
+		
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color:    #909;
+			opacity:  1;
+			text-align:center;
+		}
+		
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color:    #909;
+			text-align:center;
+		}	
+		
+		.option{/*properties of the options in booking page*/
+			color:    #909;
+			text-align:center; 
+		}
+		
+		#options{/*properties of the options box in booking page*/
+			width: 375px;
+			padding-left: 20%
+		}
+
+		#lightbox{/*properties of the lightbox*/
+			background-color:#eee;
+			padding: 10px;
+			border-bottom: 2px solid #666;
+			border-right: 2px solid #666;
+		}
+
+		#lightboxDetails{/*properties of the lightbox details*/
+			font-size: 0.8em;
+			padding-top: 0.4em;
+		}	
+
+		#lightboxCaption{/*properties of the lightbox caption*/
+			float: left;
+		}
+
+		#keyboardMsg{/*properties of the lightbox message*/
+			float: right;
+		}
+
+		#closeButton{/*properties of the lightbox close button*/
+			top: 5px; 
+			right: 5px;
+		}
+
+		#lightbox img{/*properties of the lightbox images*/
+			border: none; 
+			clear: both;
+		} 
+		
+		#overlay img{/*properties of the lightbox overlay image*/
+			border: none;
+		}
+
+		#overlay{/*properties of the lightbox overlay*/
+			background-image: url(static/images/overlay.png); 
+		}
+
+		* html #overlay{/*properties of the lightbox overlay html*/
+			background-color: #333;
+			back\ground-color: transparent;
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="static/images/overlay.png", sizingMethod="scale");
+		}
+		
+		
+		
+		
+		
+		
